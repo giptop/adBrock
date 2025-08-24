@@ -1,13 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "My AdBlock",
+  "name": "Google Ads Blocker",
   "version": "1.0",
-  "description": "シンプルな広告ブロッカー",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
-    }
-  ]
+  "description": "Google広告（doubleclick, googlesyndication など）をブロックする拡張",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "host_permissions": ["<all_urls>"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
 }
