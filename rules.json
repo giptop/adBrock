@@ -28,5 +28,118 @@
     "priority": 1,
     "action": { "type": "block" },
     "condition": { "urlFilter": "g.doubleclick.net" }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/api/stats/ads"
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/get_video_info*&adformat="
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/ptracking"
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/ads"
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*googlevideo.com/videoplayback*&dur="
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*googlevideo.com/*&oad="
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/api/stats/watchtime*&adformat="
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/youtubei/v1/log_event*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/youtubei/v1/player/ad_break"
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/api/stats/atr"
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/api/stats/qoe"
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*googlevideo.com/*&sqp=*&adurl="
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/pagead/"
+    }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { 
+      "urlFilter": "*youtube.com/get_midroll_info"
+    }
   }
 ]
