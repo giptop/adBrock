@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "My AdBlock",
+  "version": "1.0",
+  "description": "シンプルな広告ブロッカー",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
